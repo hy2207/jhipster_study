@@ -1,0 +1,154 @@
+{
+  "name": "NewCommer",
+  "fields": [
+    {
+      "fieldName": "ismember",
+      "fieldType": "Member",
+      "fieldValues": "Yes,No"
+    },
+    {
+      "fieldName": "koreanName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "englishName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "birthDay",
+      "fieldType": "Instant",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "Gender",
+      "fieldValues": "MALE,FEMALE",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "province",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "job",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "carNumber",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "baptismType",
+      "fieldType": "BaptismValue",
+      "fieldValues": "None,Infant,Baptism"
+    },
+    {
+      "fieldName": "baptismChurch",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baptismYear",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "visaStatus",
+      "fieldType": "VisaStatus",
+      "fieldValues": "Permenant,Resident,Citizen,Visitor,Study,Permit,Work,Working,Holiday"
+    },
+    {
+      "fieldName": "duty",
+      "fieldType": "Duty",
+      "fieldValues": "General,Servant,Deacon,Ordainal,Elder,Evangelist,Pastor,PastorWife,Missionary"
+    },
+    {
+      "fieldName": "previousChurch",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "introducer",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "serviceValue",
+      "otherEntityRelationshipName": "newcommer",
+      "relationshipName": "servicevalue",
+      "otherEntityField": "serviceExperience",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20200630015633",
+  "entityTableName": "new_commer",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

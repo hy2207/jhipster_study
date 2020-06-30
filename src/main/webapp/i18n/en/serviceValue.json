@@ -1,0 +1,23 @@
+{
+  "jhipsterStudyApp": {
+    "serviceValue": {
+      "home": {
+        "title": "Service Values",
+        "createLabel": "Create a new Service Value",
+        "createOrEditLabel": "Create or edit a Service Value",
+        "notFound": "No Service Values found"
+      },
+      "created": "A new Service Value is created with identifier {{ param }}",
+      "updated": "A Service Value is updated with identifier {{ param }}",
+      "deleted": "A Service Value is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Service Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Service Value"
+      },
+      "serviceExperience": "Service Experience",
+      "newcommer": "Newcommer"
+    }
+  }
+}

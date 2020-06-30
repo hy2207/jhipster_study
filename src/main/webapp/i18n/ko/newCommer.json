@@ -1,0 +1,43 @@
+{
+  "jhipsterStudyApp": {
+    "newCommer": {
+      "home": {
+        "title": "New Commers",
+        "createLabel": "Create a new New Commer",
+        "createOrEditLabel": "Create or edit a New Commer",
+        "notFound": "No New Commers found"
+      },
+      "created": "A new New Commer is created with identifier {{ param }}",
+      "updated": "A New Commer is updated with identifier {{ param }}",
+      "deleted": "A New Commer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete New Commer {{ id }}?"
+      },
+      "detail": {
+        "title": "New Commer"
+      },
+      "ismember": "Ismember",
+      "koreanName": "Korean Name",
+      "englishName": "English Name",
+      "birthDay": "Birth Day",
+      "gender": "Gender",
+      "address": "Address",
+      "city": "City",
+      "province": "Province",
+      "postalCode": "Postal Code",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "job": "Job",
+      "company": "Company",
+      "carNumber": "Car Number",
+      "baptismType": "Baptism Type",
+      "baptismChurch": "Baptism Church",
+      "baptismYear": "Baptism Year",
+      "visaStatus": "Visa Status",
+      "duty": "Duty",
+      "previousChurch": "Previous Church",
+      "introducer": "Introducer",
+      "servicevalue": "Servicevalue"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ServiceValue",
+  "fields": [
+    {
+      "fieldName": "serviceExperience",
+      "fieldType": "ServiceTitle",
+      "fieldValues": "Design,Ministry,Administration,Praise,Team,Parking,Information,Financial,Management,Facility,Landscaping,Others"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "newCommer",
+      "otherEntityRelationshipName": "servicevalue",
+      "relationshipName": "newcommer",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200630015733",
+  "entityTableName": "service_value",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

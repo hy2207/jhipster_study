@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity NewCommer.
+    -->
+    <changeSet id="20200630015633-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="new_commer_id"
+                                 baseTableName="new_commer_servicevalue"
+                                 constraintName="fk_new_commer_servicevalue_new_commer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="new_commer"/>
+
+        <addForeignKeyConstraint baseColumnNames="servicevalue_id"
+                                 baseTableName="new_commer_servicevalue"
+                                 constraintName="fk_new_commer_servicevalue_servicevalue_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="service_value"/>
+        
+    </changeSet>
+</databaseChangeLog>

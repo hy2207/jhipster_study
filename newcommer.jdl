@@ -1,0 +1,62 @@
+entity NewCommer {
+	ismember Member,
+    koreanName String required,
+    englishName String required,
+    birthDay Instant required,
+    gender Gender required, 
+    address String required,
+    city String required,
+    province String required,
+    postalCode String required,
+    phoneNumber String required,
+    email String required,
+    job String required,
+    company String required,
+    carNumber String required,
+    baptismType BaptismValue,
+    baptismChurch String,
+    baptismYear Integer,
+    visaStatus VisaStatus,
+    duty Duty,
+    previousChurch String,
+    introducer String,
+//    serviceExperience Service,
+}
+
+entity ServiceValue {
+	serviceExperience ServiceTitle
+}
+
+enum Member {
+	Yes, No
+}
+enum Gender {
+	MALE, FEMALE
+}
+enum BaptismValue {
+	None, Infant Baptism, Baptism
+}
+enum VisaStatus {
+	Permenant Resident, Citizen, 
+    Visitor, Study Permit,
+    Work Permit, Working Holiday
+}
+enum Duty {
+	General Servant, Deacon, Ordainal Deacon, Elder,
+    Evangelist, Pastor, PastorWife, Missionary
+}
+enum ServiceTitle {
+	Design, Ministry, Administration, 
+    Praise Team, 
+    Parking Information, 
+    Financial Management, 
+    Facility Management,
+    Landscaping,
+    Others
+}
+
+relationship ManyToMany {
+	NewCommer{servicevalue(serviceExperience)} to 
+    	ServiceValue{newcommer}
+}
+

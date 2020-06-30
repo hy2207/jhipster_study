@@ -1,0 +1,10 @@
+{
+  "jhipsterStudyApp": {
+    "BaptismValue": {
+      "null": "",
+      "None": "None",
+      "Infant": "Infant",
+      "Baptism": "Baptism"
+    }
+  }
+}
